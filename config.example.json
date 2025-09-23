@@ -1,0 +1,4 @@
+{
+  "BOT_TOKEN": "YOUR_TELEGRAM_BOT_TOKEN",
+  "API_URL": "http://url.art.lab.backend.api"
+}

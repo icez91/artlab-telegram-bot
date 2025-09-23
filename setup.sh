@@ -26,4 +26,9 @@ else
     echo "ℹ️ requirements.txt пуст или отсутствует — пропускаю установку."
 fi
 
+# Проверяем наличие конфига
+if [ ! -f .env ]; then
+    echo "❌ Нет config.json файла, создайте его!!!"
+fi
+
 echo "✅ Всё готово! Можешь запускать проект: python art-lab-telegram-bot.py"
