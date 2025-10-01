@@ -1,0 +1,8 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: artlab-bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - API_URL=${API_URL}
+    restart: unless-stopped
