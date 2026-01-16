@@ -1,5 +1,6 @@
 import os
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
+BOT_API_TOKEN = os.getenv("BOT_API_TOKEN", "YOUR_TELEGRAM_BOT_API_TOKEN")
 API_URL = os.getenv("API_URL", "http://YOUR_API_URL")
 

@@ -6,3 +6,12 @@ services:
       - BOT_TOKEN=${BOT_TOKEN}
       - API_URL=${API_URL}
     restart: unless-stopped
+    networks:
+      laravel_net:
+        aliases:
+          - telegram-bot
+
+networks:
+  laravel_net:
+    external: true
+    name: art-lab_laravel_net
