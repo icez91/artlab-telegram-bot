@@ -53,8 +53,8 @@ class APIClient:
     # -----------------------------
     #          Методы API
     # -----------------------------
-    async def check_user(self):
-        return await self._request("GET", "/bot/check-user")
+    async def check_user(self, data):
+        return await self._request("POST", "/bot/check-user", data=data)
 
     async def get_categories(self):
         return await self._request("GET", "/categories")

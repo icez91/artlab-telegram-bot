@@ -1,6 +1,9 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import ContextTypes
-from bot.api_client import APIClient
+from telegram.ext import (
+    ContextTypes,
+    CallbackQueryHandler,
+)
+from bot.core.api import APIClient
 
 # ----------------------------------------------------------
 #           Старт: проверка пользователя
@@ -9,11 +12,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     tg_user_id = update.effective_user.id
     api = APIClient(tg_user_id)
-    res = await api.check_user()
+    data = {
+        "telegram_id": tg_user_id,
+    }
+    res = await api.check_user(data)
 
     if not res.get("response", {}).get("authorized", False):
-    await update.message.reply_text("⛔ У вас нет доступа!\nОбратитесь к администратору.")
-    return
+        await update.message.reply_text("⛔ У вас нет доступа!\nОбратитесь к администратору.")
+        return
 
     # ---- Пользователь авторизован — выводим главное меню ----
     keyboard_main = [

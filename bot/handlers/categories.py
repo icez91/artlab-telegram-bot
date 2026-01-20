@@ -10,7 +10,7 @@ from telegram.ext import (
 import httpx
 import io
 from PIL import Image
-from bot.api_client import APIClient
+from bot.core.api import APIClient
 
 # ---- Стадии ----
 ADD_CATEGORY_NAME = 1
