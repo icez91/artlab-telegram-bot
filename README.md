@@ -4,7 +4,7 @@
 Телегамм BOT для сервиса [art]Lab **ArtLabBot** написан на python с использованием библиотеки python-telegram-bot==20.6.
 
 Backend API здесь: https://github.com/icez91/artlab-backend
-Frontend здесь: https://github.com/icez91/artlab-frontend
+<br/>Frontend здесь: https://github.com/icez91/artlab-frontend
 
 
 Разворачивание проекта (через docker):
@@ -49,5 +49,5 @@ art-lab-telegram-bot/
 
 ## DEMO
 <a href="https://github.com/user-attachments/assets/8dd630a5-dbb1-4554-8f63-8e7b21b440cf">
-    <img src="demo.jpg" width="50%" title="Demo video">
+    <img src="demo.jpg" width="25%" title="Demo video">
 </a>
