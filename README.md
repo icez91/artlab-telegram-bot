@@ -48,6 +48,6 @@ art-lab-telegram-bot/
 ```
 
 ## DEMO
-<a href="https://github.com/user-attachments/assets/8dd630a5-dbb1-4554-8f63-8e7b21b440cf">
+<a href="https://github.com/user-attachments/assets/81cce696-5bc8-4ade-9021-7828393f711e">
     <img src="demo.jpg" width="25%" title="Demo video">
 </a>
